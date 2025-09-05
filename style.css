@@ -107,9 +107,10 @@ header nav a:hover {
 }
 
 .social .icons a {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 0 1rem;
   color: #333;
+  transition: color 0.3s;
 }
 
 .social .icons a:hover {
@@ -123,4 +124,3 @@ footer {
   text-align: center;
   padding: 1rem;
 }
-
