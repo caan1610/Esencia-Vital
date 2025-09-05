@@ -7,21 +7,23 @@ body {
   background: #111;
 }
 
-/* Encabezado con fondo mejorado */
+/* Encabezado con fondo optimizado */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-              url("imagenes/fondo_1.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+              url("imagenes/fondo_1.jpg") no-repeat center center;
+  background-size: contain; /* evita estirarlo demasiado */
+  background-color: #000;   /* rellena los bordes con negro */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
-  filter: blur(0.5px) brightness(1.1); /* mejora visual contra pixelación */
+  filter: blur(0.8px) brightness(1.05);
 }
 
 .hero .overlay {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   padding: 40px;
   border-radius: 15px;
 }
