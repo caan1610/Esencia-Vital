@@ -7,19 +7,21 @@ body {
   background: #111;
 }
 
-/* Encabezado con fondo */
+/* Encabezado con fondo mejorado */
 .hero {
   height: 100vh;
-  background: url("imagenes/fondo_1.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url("imagenes/fondo_1.jpg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
+  filter: blur(0.5px) brightness(1.1); /* mejora visual contra pixelación */
 }
 
 .hero .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   padding: 40px;
   border-radius: 15px;
 }
@@ -39,7 +41,7 @@ body {
 /* Sección productos */
 #productos {
   padding: 60px 20px;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 #productos h2 {
@@ -109,4 +111,24 @@ footer a {
 
 footer a:hover {
   color: #ffcc00;
+}
+
+/* Botón flotante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background: #1ebe57;
 }
