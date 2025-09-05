@@ -1,59 +1,76 @@
-/* Fuente y márgenes básicos */
+/* Fuente global y reset */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: url("imagenes/fondo_1.jpg") no-repeat center center fixed;
-  background-size: cover;
   color: #fff;
+  background: #111;
 }
 
-/* Encabezado */
-header {
+/* Encabezado con fondo */
+.hero {
+  height: 100vh;
+  background: url("imagenes/fondo_1.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 50px 20px;
-  background: rgba(0, 0, 0, 0.6);
+  position: relative;
 }
 
-header h1 {
-  font-size: 3rem;
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.hero h1 {
+  font-size: 4rem;
   margin: 0;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-header p {
-  font-size: 1.2rem;
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 15px;
 }
 
 /* Sección productos */
 #productos {
-  padding: 40px 20px;
-  background: rgba(0, 0, 0, 0.5);
+  padding: 60px 20px;
+  background: rgba(0, 0, 0, 0.85);
 }
 
 #productos h2 {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
 .galeria {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .producto {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 15px;
-  width: 250px;
+  background: #222;
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
   text-align: center;
-  transition: transform 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .producto:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7);
 }
 
 .producto img {
@@ -62,28 +79,30 @@ header p {
 }
 
 .producto h3 {
-  margin: 10px 0 5px;
+  margin: 15px 0 10px;
+  color: #ffcc00;
 }
 
 .producto p {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: #ddd;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  margin-top: 30px;
+  padding: 30px;
+  background: #000;
 }
 
 footer p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
 }
 
 footer a {
-  margin: 0 10px;
-  font-size: 1.8rem;
+  margin: 0 15px;
+  font-size: 2rem;
   color: #fff;
   transition: color 0.3s;
 }
