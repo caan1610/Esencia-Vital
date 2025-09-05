@@ -5,20 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi Página Profesional</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Fuente bonita -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Iconos de redes -->
+  <script src="https://kit.fontawesome.com/a2e0c6ad4f.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <h1>Bienvenido a Mi Página</h1>
-    <p>Ejemplo lista para Netlify</p>
+    <div class="logo">🌐 Mi Marca</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <section>
-    <img src="imagenes/hero.jpg" alt="Imagen de ejemplo" width="400">
-    <p>Este es un ejemplo de página lista para desplegar en Netlify.</p>
+  <section class="hero" id="inicio">
+    <h1>Bienvenido a Mi Página</h1>
+    <p>Un diseño moderno y profesional, listo para Netlify</p>
+    <a href="#contacto" class="btn">Contáctame</a>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <h2>Sobre mí</h2>
+    <p>Este es un ejemplo de cómo se ve un sitio más estilizado, con tipografía y estilos modernos.</p>
+    <img src="imagenes/hero.jpg" alt="Ejemplo" />
+  </section>
+
+  <section class="social" id="contacto">
+    <h2>Conéctate conmigo</h2>
+    <div class="icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Mi Marca</p>
+    <p>© 2025 Mi Marca. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
